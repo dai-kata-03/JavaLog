@@ -11,6 +11,12 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        Log.d("javatest", "ログへの出力テスト"); //ログ出力 Lesson 3.4
+        // 整数型の変数をnumと言う名前で作成して、10を代入する。Lesson 5.3
+        int num = 10;
+        Log.d("javatest", String.valueOf(num));
+
+        // numに50を代入する。Lesson 5.3
+        num = 50;
+        Log.d("javatest", String.valueOf(num));
     }
 }
