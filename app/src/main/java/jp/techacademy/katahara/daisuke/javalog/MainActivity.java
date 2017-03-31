@@ -11,19 +11,19 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        // Lesson 6.3 関数の戻り値
+        // Lesson 7.3 クラスとインスタンス
 
-        int t = total(100, 1000);
-        Log.d("javatest",String.valueOf(t));
-    }
+        Dog dog = new Dog("ポチ", 3); // 名前をポチ、年齢3歳で、Dogのインスタンスを作る
 
-    private int total(int first, int last) {
-        int sum = 0;
+        dog.say();
+        Log.d("javatest", "犬の名前は" + dog.name + "です。");
+        Log.d("javatest", "犬の年齢は" + dog.age + "歳です。");
 
-        for (int i = first; i < last; i++) {
-            sum = sum + i;
-        }
+        Dog dog2 = new Dog("ハチ", 10); // 名前をハチ、年齢10歳で、Dogのインスタンスを作る
 
-        return sum;
-    }
+        dog2.say();
+        Log.d("javatest", "犬の名前は" + dog2.name + "です。");
+        Log.d("javatest", "犬の年齢は" + dog2.age + "歳です。");
+
+     }
 }
