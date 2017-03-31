@@ -5,7 +5,7 @@ package jp.techacademy.katahara.daisuke.javalog;
  */
 import android.util.Log;
 
-class Dog {
+class Dog extends Animal {
 
     // クラス変数
     static String to_jp = "犬";
