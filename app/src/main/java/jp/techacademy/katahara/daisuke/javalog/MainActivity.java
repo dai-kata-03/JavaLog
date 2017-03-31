@@ -11,17 +11,18 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        // Lesson 5.6 反復処理。For文とWhile文
+        // Lesson 5.7 配列
 
-        for (int i = 1; i < 6; i++ ) {
-            Log.d("javatest","for文の" + String.valueOf(i) + "回目");
-        }
+        int [] points = new int [5];
 
-        int num = 1;
+        points [0] = 10;
+        points [1] = 6;
+        points [2] = 15;
+        points [3] = 23;
+        points [4] = 17;
 
-        while (num < 6) {
-            Log.d("javatest", "while文の" + String.valueOf(num) + "回目");
-            num++;
+        for (int i = 0; i < 5; i++) {
+            Log.d("javatest", String.valueOf(points[i]));
         }
 
     }
