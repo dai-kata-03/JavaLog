@@ -11,22 +11,19 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        // Lesson 5.4 演算子
-        int num1 = 10 + 5 - 2 * 4 / 2;
-        Log.d("javatest", "10 + 5 - 2 * 4 / 2 =" + String.valueOf(num1));
+        // Lesson 5.5 条件分岐
 
-        boolean flag1 = true;
-        boolean flag2 = false;
+        int num = 89;
+        if (num >= 90) {
+            Log.d("javatest","優");
+        } else if (num >= 75) {
+            Log.d("javatest", "良");
+        } else if (num >= 60) {
+            Log.d("javatest","可");
+        } else {
+            Log.d("javatest","不可");
+        }
 
-        Log.d("javatest","flag1 && flag2 =" + String.valueOf(flag1 && flag2));
-        Log.d("javatest", "flag1 || flag2 =" + String.valueOf(flag1 || flag2));
-
-        int num2 = 10;
-        int num3 = 20;
-        Log.d("javatest", "num2 < num3 =" + String.valueOf(num2 < num3) );
-
-        String str = "aaa" + "bbb";
-        Log.d("javatest", "aaa + bbb =" + str);
 
     }
 }
