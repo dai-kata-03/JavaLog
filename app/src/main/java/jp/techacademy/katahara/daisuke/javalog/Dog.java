@@ -5,7 +5,7 @@ package jp.techacademy.katahara.daisuke.javalog;
  */
 import android.util.Log;
 
-class Dog extends Animal {
+class Dog extends Animal implements Movable {
 
     // クラス変数
     static String to_jp = "犬";
@@ -28,6 +28,11 @@ class Dog extends Animal {
     // メンバ関数
     public void say() {
         Log.d("javatest", this.name + "(" + this.age + "歳)" + "「ワンワン」");
+    }
+
+    @Override
+    public void move() {
+        Log.d("javatest", this.name + "(" + this.age + "歳)" + "は全力で走った。");
     }
 
 }
