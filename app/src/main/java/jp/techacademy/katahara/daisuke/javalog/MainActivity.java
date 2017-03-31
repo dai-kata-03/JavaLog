@@ -11,7 +11,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        // Lesson 7.4 メンバ変数とクラス変数、メンバ関数とクラス関数
+        // Lesson 7.5 クラスの継承
 
         Dog dog = new Dog("ポチ", 3); // 名前をポチ、年齢3歳で、Dogのインスタンスを作る
 
@@ -19,8 +19,12 @@ public class MainActivity extends AppCompatActivity {
         Log.d("javatest", "犬の名前は" + dog.name + "です。");
         Log.d("javatest", "犬の年齢は" + dog.age + "歳です。");
 
-        Dog.introduce ();
-        Log.d("javatest", Dog.to_jp + "のクラス変数です。");
+        BigDog bigdog = new BigDog("ヨーゼフ", 15); // 名前をヨーゼフ、年齢15歳で、BigDogのインスタンスを作る
 
-     }
+        bigdog.say();
+        Log.d("javatest", "犬の名前は" + dog.name + "です。");
+        Log.d("javatest", "犬の年齢は" + dog.age + "歳です。");
+
+
+    }
 }
