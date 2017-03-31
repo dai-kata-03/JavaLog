@@ -11,19 +11,18 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        // Lesson 5.7 配列
+        // Lesson 6.0 関数
 
-        int [] points = new int [5];
+        total(50, 1000);
+    }
 
-        points [0] = 10;
-        points [1] = 6;
-        points [2] = 15;
-        points [3] = 23;
-        points [4] = 17;
+    private void total(int first, int last) {
+        int sum = 0;
 
-        for (int i = 0; i < 5; i++) {
-            Log.d("javatest", String.valueOf(points[i]));
+        for (int i = first; i <= last; i++) {
+            sum = sum + i;
         }
 
+        Log.d("javatest", String.valueOf(sum));
     }
 }
