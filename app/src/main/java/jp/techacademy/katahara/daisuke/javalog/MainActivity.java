@@ -11,11 +11,11 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        // 課題：Humanクラスの定義
+        // 課題：Humanクラスの定義 - インタフェース
 
-        Human human = new Human("宮原", 35); // 名前を宮原、年齢35歳で、Humanのインスタンスを作る
+        Human human = new Human("サッカーと野球"); // 趣味＝サッカーと野球、Humanのインスタンスを作る
 
-        human.say();
+        human.think();
 
     }
 }
