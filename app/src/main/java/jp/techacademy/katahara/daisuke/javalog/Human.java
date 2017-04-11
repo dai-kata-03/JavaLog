@@ -9,12 +9,10 @@ import android.util.Log;
 class Human extends Animal implements Thinkable {
 
     // メンバ変数
-    String name;
-    int age;
-    String hobby;
+       String hobby;
 
     // コンストラクタ
-    public Human (String hobby) {
+    public Human (String hobby, String name, int age) {
         this.name = name;
         this.age = age;
         this.hobby = hobby;

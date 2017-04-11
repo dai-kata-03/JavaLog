@@ -13,8 +13,9 @@ public class MainActivity extends AppCompatActivity {
 
         // 課題：Humanクラスの定義 - インタフェース
 
-        Human human = new Human("サッカーと野球"); // 趣味＝サッカーと野球、Humanのインスタンスを作る
+        Human human = new Human("サッカーと野球","片原",40); // 趣味＝サッカーと野球、名前=片原、年齢=40でHumanのインスタンスを作る
 
+        human.say();
         human.think();
 
     }
